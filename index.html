@@ -1,6 +1,56 @@
 <html>
+    <head>
+        <style>
+            html {
+                height: 100%;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            body {
+                height: 100%;
+                margin: 0px;
+                padding: 0px;
+                background: linear-gradient(to bottom, #127061, #126170) no-repeat center center fixed;
+            }
+            .container {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+            .header {
+                display: flex;
+                justify-content: space-between;
+                background: linear-gradient(to bottom, #ec6, #ec6, #ec6, transparent);
+                padding: 10px 20px 30px;
+            }
+            .page-title {
+                color:#126170;
+            }
+            .main-image {
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                row-gap: 20px;
+                align-items: center;
+            }
+            .main-image.img {
+            }
+        </style>
+        <title>title = jakeThompson.portfolio("home")</title>
+    </head>
     <body>
-        <h1>Jake's Portfolio.</h1>
-        <img src="pumpkin.jpg" alt="fly, baby!" width="800px" />
+        <div class="container">
+            <div class="header">
+                <div class="left-header"></div>
+                <div class="center-header">
+                    <span class="page-title">jakeThompson.portfolio</span>
+                </div>
+                <div class="right-header"></div>
+            </div>
+            <div class="main-image">
+                <span>More coming soon...</span>
+                <img src="pumpkin.jpg" width="50%" />
+            </div>
+        </div>
     </body>
 </html>
