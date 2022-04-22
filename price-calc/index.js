@@ -81,7 +81,7 @@ function requestPricing(value=inputDiv.value) {
         `;
         historyOutput = `
             <div class="history-row">
-                <div class="history-cell first-history-cell">$ ${currentPrice.cost}</div>
+                <div class="history-cell">$ ${currentPrice.cost}</div>
                 <div class="history-cell">$ ${currentPrice.list}</div>
                 <div class="history-cell">$ ${currentPrice.comp}</div>
                 <div class="history-cell">$ ${currentPrice.trade}</div>
@@ -92,7 +92,7 @@ function requestPricing(value=inputDiv.value) {
     } else {
         console.log('bad input');
         historyOutput = `
-        <div class="history-row">
+        <div class="history-row error-row">
             '${value}' is not a valid input.
         </div>
     ` + historyOutput;

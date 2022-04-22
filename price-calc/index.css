@@ -89,19 +89,19 @@ body {
 .history-row {
     display: flex;
     justify-content: space-between;
-    width: calc(100% - 20px);
-    padding: 10px;
-    column-gap: 10px;
+    width: 100%;
+    padding: 10px 0px;
+    column-gap: 5px;
     margin-bottom: -20px;
 
 }
 
 .history-row:nth-child(even) {
-    background-color: rgba(200,200,200,.3);
+    background-color: rgba(200,200,200,.4);
 }
 
 .history-row:nth-child(odd) {
-    background-color: rgba(150,150,150,.2);
+    background-color: rgba(150,150,150,.3);
 }
 
 .history-row:first-child {
@@ -116,9 +116,9 @@ body {
 
 .history-cell {
     flex: 1;
-    padding: 5px 10px;
-    font-size: 20px;
-    background-color: rgba(200, 230, 255, .6);
+    padding: 5px 0px;
+    font-size: 24px;
+    text-align: center;
 }
 
 .history-title {
@@ -126,26 +126,6 @@ body {
     color: #273641;
     padding: 10px;
     border-bottom: 2px solid #273641;
-}
-
-.history-title:first-child {
-    padding-left: 20px;
-}
-
-.history-title:last-child {
-    padding-right: 20px;
-}
-
-.history-row:nth-child(even) .history-cell {
-    background-color: rgba(200, 255, 230, .6);
-}
-
-.history-row:nth-child(even) .history-cell:first-child {
-    background-color: rgba(100, 155, 130, .6);
-}
-
-.first-history-cell {
-    background-color: rgba(100, 130, 155, .6);
 }
 
 .output-row {
@@ -156,4 +136,11 @@ body {
 
 .output-row:first-child {
     color: #a32;
+}
+
+.error-row {
+    color: #a32;
+    justify-content: center;
+    font-size: 22px;
+    letter-spacing: 1px;
 }
