@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body onclick="focusOnInput()">
+    <div class="container">
+        <div class="wrapper">
+            <div class="top-content">
+                <div class="input-area module" id="input-area">
+                    <div class="module-title">Input</div>
+                    <div class="module-content">
+                        <span>Enter product cost:</span>
+                        <input class="input-field" id="inputField" />
+                        <button id="submitButton" type="button" class="submit-button" onclick="requestPricing()">Submit</button>
+                    </div>
+                </div>
+                <div class="answer-area module">
+                    <div class="module-title">Output</div>
+                    <div class="module-content" id="outputField">No data to display</div>
+                </div>
+            </div>
+            <div class="bottom-content module">
+                <div class="answer-history">
+                    <div class="module-title">History</div>
+                    <div class="module-content" id="historyField">No history yet</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
