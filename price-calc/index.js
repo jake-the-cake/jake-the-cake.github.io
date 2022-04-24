@@ -43,6 +43,7 @@ function requestPricing(value=inputDiv.value) {
     // debug input
     value = value.replaceAll(/[^a-zA-Z0-9.]/g,'');
     let garbageVar = value * 0;
+    let outputOutput = '';
     
     // remove last item from list if over 'MAX_HISTORY_ROWS' items
     if (rowCounter > MAX_HISTORY_ROWS) {
@@ -61,8 +62,8 @@ function requestPricing(value=inputDiv.value) {
             trade: (value * MULTIPLIERS[2]).toFixed(2),
         });
         let currentPrice = priceHistory[priceHistory.length - 1];
-        let outputOutput = `
-            <div class="output-row">
+        outputOutput = `
+            <div class="output-row flex100">
                 <div class="output-cell">cost:</div>
                 <div class="output-cell">$ ${currentPrice.cost}</div>
             </div>
@@ -87,8 +88,8 @@ function requestPricing(value=inputDiv.value) {
                 <div class="history-cell">$ ${currentPrice.trade}</div>
             </div>
         ` + historyOutput;
-        outputDiv.innerHTML = outputOutput;
-        historyDiv.innerHTML = tableHeader + historyOutput;
+        //outputDiv.innerHTML = outputOutput;
+        //historyDiv.innerHTML = tableHeader + historyOutput;
     } else {
         console.log('bad input');
         historyOutput = `
@@ -96,14 +97,17 @@ function requestPricing(value=inputDiv.value) {
             '${value}' is not a valid input.
         </div>
     ` + historyOutput;
-    let outputOutput = `
+    outputOutput = `
         <div class="output-row">
             Not a valid input.
         </div>
     `;
+    //outputDiv.innerHTML = outputOutput;
+    //historyDiv.innerHTML = tableHeader + historyOutput;
+    }
+
     outputDiv.innerHTML = outputOutput;
     historyDiv.innerHTML = tableHeader + historyOutput;
-    }
 
     // reset input field, focus on it, and increase the row counter
     inputDiv.value = '';

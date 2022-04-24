@@ -7,21 +7,23 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
 </head>
-<body onclick="focusOnInput()">
+<body>
     <div class="container">
         <div class="wrapper">
             <div class="top-content">
-                <div class="input-area module" id="input-area">
+                <div class="input-area module" id="input-area" onclick="focusOnInput()">
                     <div class="module-title">Input</div>
                     <div class="module-content">
                         <span>Enter product cost:</span>
+                        <div class="inputSubmitContainer">
                         <input class="input-field" id="inputField" />
                         <button id="submitButton" type="button" class="submit-button" onclick="requestPricing()">Submit</button>
+                        </div>
                     </div>
                 </div>
                 <div class="answer-area module">
                     <div class="module-title">Output</div>
-                    <div class="module-content" id="outputField">No data to display</div>
+                    <div class="module-content output-small" id="outputField">No data to display</div>
                 </div>
             </div>
             <div class="bottom-content module">
