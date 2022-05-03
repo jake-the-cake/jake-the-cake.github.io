@@ -137,3 +137,10 @@ button {
     align-items: center;
     text-shadow: 1px 1px 1px black;
 }
+
+@media screen and (max-width: 420px) {
+    .calc-form {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}
