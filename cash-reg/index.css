@@ -141,6 +141,5 @@ button {
 @media screen and (max-width: 420px) {
     .calc-form {
         flex-direction: column;
-        row-gap: 10px;
     }
 }
