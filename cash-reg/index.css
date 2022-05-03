@@ -1,6 +1,7 @@
 body {
     background: linear-gradient(to bottom, black, #a20);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px;
 }
 
 .container {
