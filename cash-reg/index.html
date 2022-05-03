@@ -1,1 +1,121 @@
-a
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register Drawer Counter</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="inner-container">
+            <div class="form-container">
+                <form class="calc-form" name="calc-form" action="" method="post">
+                    <div class="left-form-column">
+                        <div class="form-cell">
+                            <div class="cell-error">
+                                <div id="hundred-error" class="cell-error-content"></div>
+                            </div>
+                            <div class="cell-label">Hundred</div>
+                            <div class="cell-input">
+                                <input type="text" name="hundred-input" />
+                            </div>
+                        </div>
+                        <div class="form-cell">
+                            <div class="cell-error">
+                                <div id="fifty-error" class="cell-error-content"></div>
+                            </div>
+                            <div class="cell-label">Fifty</div>
+                            <div class="cell-input">
+                                <input type="text" name="fifty-input" />
+                            </div>
+                        </div>
+                        <div class="form-cell">
+                            <div class="cell-error">
+                                <div id="twenty-error" class="cell-error-content"></div>
+                            </div>
+                            <div class="cell-label">Twenty</div>
+                            <div class="cell-input">
+                                <input type="text" name="twenty-input" />
+                            </div>
+                        </div>
+                        <div class="form-cell">
+                            <div class="cell-error">
+                                <div id="ten-error" class="cell-error-content"></div>
+                            </div>
+                            <div class="cell-label">Ten</div>
+                            <div class="cell-input">
+                                <input type="text" name="ten-input" />
+                            </div>
+                        </div>
+                        <div class="form-cell">
+                            <div class="cell-error">
+                                <div id="five-error" class="cell-error-content"></div>                            </div>
+                            <div class="cell-label">Five</div>
+                            <div class="cell-input">
+                                <input type="text" name="five-input" />
+                            </div>
+                        </div>
+                        <div class="form-cell">
+                            <div class="cell-error">
+                                <div id="single-error" class="cell-error-content"></div>
+                            </div>
+                            <div class="cell-label">One</div>
+                            <div class="cell-input">
+                                <input type="text" name="single-input" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-form-column">
+                        <div class="form-cell">
+                            <div class="cell-error">
+                                <div id="quarter-error" class="cell-error-content"></div>
+                            </div>
+                            <div class="cell-label">Quarter</div>
+                            <div class="cell-input">
+                                <input type="text" name="quarter-input" />
+                            </div>
+                        </div>
+                        <div class="form-cell">
+                            <div class="cell-error">
+                                <div id="dime-error" class="cell-error-content"></div>
+                            </div>
+                            <div class="cell-label">Dime</div>
+                            <div class="cell-input">
+                                <input type="text" name="dime-input" />
+                            </div>
+                        </div>
+                        <div class="form-cell">
+                            <div class="cell-error">
+                                <div id="nickel-error" class="cell-error-content"></div>
+                            </div>
+                            <div class="cell-label">Nickel</div>
+                            <div class="cell-input">
+                                <input type="text" name="nickel-input" />
+                            </div>
+                        </div>
+                        <div class="form-cell">
+                            <div class="cell-error">
+                                <div id="penny-error" class="cell-error-content"></div>
+                            </div>
+                            <div class="cell-label">Penny</div>
+                            <div class="cell-input">
+                                <input type="text" name="penny-input" />
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <button type="button" class="form-submit-button" onclick='handleForm()'>Count</button>
+                            <button type="button" class="form-clear-button" onclick='handleClear()'>Clear</button>
+                        </div>
+                        <div class="result-container" id="result-container"></div>
+                    </div>                                    
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
