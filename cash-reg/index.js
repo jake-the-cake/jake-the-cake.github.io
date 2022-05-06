@@ -72,13 +72,11 @@ const handleForm = () => {
     if (stillValid === true) {
         console.log('good');
         resultDiv.innerHTML = `$ ${currentBalance.toFixed(2)}`;
-        resultDiv.style.color = 'white';
-        resultDiv.style.fontSize = '44px';
+        resultDiv.style = 'color:white;font-size:48px';
     } else {
         console.log('bad');
-        resultDiv.innerHTML = 'Please correct errors.';
-        resultDiv.style.color = 'red';
-        resultDiv.style.fontSize = '20px';
+        resultDiv.innerHTML = 'Please correct<br/>errors.';
+        resultDiv.style = 'color:red;font-size:20px;text-align:center;';
     }
 
     return false;
@@ -104,4 +102,6 @@ const handleClear = () => {
         resultDiv.innerHTML = '';
         messageDiv.style.display = 'none';
     }
+    document.getElementById('hundred-input').focus();
+    return false;
 }
