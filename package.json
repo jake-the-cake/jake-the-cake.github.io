@@ -1,0 +1,29 @@
+{
+  "name": "jake-the-cake.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jake-the-cake/jake-the-cake.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jake-the-cake/jake-the-cake.github.io/issues"
+  },
+  "homepage": "https://github.com/jake-the-cake/jake-the-cake.github.io#readme",
+  "dependencies": {
+    "build": "^0.1.4",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.9.2"
+  }
+}
